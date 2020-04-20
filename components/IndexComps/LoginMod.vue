@@ -19,7 +19,7 @@
           <v-divider></v-divider>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn @click="loginUser" type="submit" color="info">Login</v-btn>
+            <v-btn @click.prevent="loginUser" type="submit" color="info">Login</v-btn>
           </v-card-actions>
         </v-form>
       </v-card>
@@ -37,6 +37,7 @@ export default {
   methods: {
     loginUser() {
       alert('Wow you logged in. Nice!')
+      this.$router.push('/dashboard')
     }
   }
 }
