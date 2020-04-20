@@ -1,0 +1,27 @@
+[
+    {
+        "cg": 1000001,
+        "property": "West Ham Village",
+        "email": "admin@whv.com"
+    },
+    {
+        "cg": 1000002,
+        "property": "East Loch Ness Place",
+        "email": "user@eastlochplace.com"
+    },
+    {
+        "cg": 1000003,
+        "property": "The Apartments",
+        "email": "genmang@theapts.com"
+    },
+    {
+        "cg": 1000004,
+        "property": "The Hole",
+        "email": "maintenance@hole.com"
+    },
+    {
+        "cg": 1000005,
+        "property": "Brooklchesterfield Townhomes",
+        "email": "accounting@mitchfancy.com"
+    }
+]
