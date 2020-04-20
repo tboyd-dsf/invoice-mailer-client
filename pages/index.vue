@@ -1,13 +1,14 @@
 <template>
   <v-container>
-    <h1>Hello</h1>
+    <login-mod></login-mod>
   </v-container>
 </template>
 
 <script>
-
-
+import LoginMod from '../components/IndexComps/LoginMod'
 export default {
-  
+  components: {
+    LoginMod
+  }
 }
 </script>
