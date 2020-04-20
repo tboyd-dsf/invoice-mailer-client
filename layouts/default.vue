@@ -4,7 +4,7 @@
       <app-nav-bar></app-nav-bar>
       <div class="py-6"></div>
       <nuxt></nuxt>
-      <div class="py-6"></div>
+      <div class="py-12"></div>
       <app-foot-bar></app-foot-bar>
     </v-content>
   </v-app>

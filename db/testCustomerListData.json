@@ -1,0 +1,27 @@
+[
+    {
+        "property": "West Ham Village",
+        "email": "admin@whv.com",
+        "active": true
+    },
+    {
+        "property": "East Loch Ness Place",
+        "email": "user@eachlochplace.com",
+        "active": true
+    },
+    {
+        "property": "The Apartments",
+        "email": "genmang@theapts.com",
+        "active": true
+    },
+    {
+        "property": "The Hole",
+        "email": "maintenance@hole.com",
+        "active": false
+    },
+    {
+        "property": "Brooklchesterfield Townhomes",
+        "email": "accounting@mitchfancy.com",
+        "active": true
+    }
+]
