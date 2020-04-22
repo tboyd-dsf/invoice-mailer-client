@@ -8,10 +8,6 @@
 <script>
 export default {
   props: {
-    invoiceData: {
-      type: Array,
-      required: true
-    },
     customerList: {
         type: Array,
         required: true

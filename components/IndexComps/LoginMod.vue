@@ -7,10 +7,11 @@
         </v-card-title>
         <v-form>
           <v-card-text>
-            <v-text-field label="Username" prepend-icon="mdi-account-circle" />
+            <v-text-field label="Username" v-model="email" prepend-icon="mdi-account-circle" />
             <v-text-field
               :type="showPassword ? 'text' : 'password'"
               label="Password"
+              v-model="password"
               prepend-icon="mdi-lock"
               :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
               @click:append="showPassword = !showPassword"
@@ -28,16 +29,28 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
-      showPassword: false
+      showPassword: false,
+      email: '',
+      password: ''
     }
   },
   methods: {
-    loginUser() {
+    async loginUser() {
       alert('Wow you logged in. Nice!')
-      this.$router.push('/dashboard')
+      await axios.post(`http://localhost:3030/api/login`, {
+        email: this.email,
+        password: this.password
+      })
+      .then((res) => {
+        console.log(res)
+        this.$router.push('/dashboard')
+        this.email = ''
+        this.password = ''
+      })
     }
   }
 }
