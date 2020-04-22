@@ -10,6 +10,7 @@
                         <p>Login to see Outgoing Invoices and Customer List</p>
                     </v-list-item>
                     <div class="my-12"></div>
+                    <div class="my-12"></div>
                     <hr>
                     <v-card-actions>
                         <v-spacer></v-spacer>

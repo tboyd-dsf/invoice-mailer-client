@@ -20,7 +20,7 @@
           <v-divider></v-divider>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn @click.prevent="loginUser" type="submit" color="info">Login</v-btn>
+            <v-btn @click.prevent="loginUser" type="submit" color="primary">Login</v-btn>
           </v-card-actions>
         </v-form>
       </v-card>
@@ -40,7 +40,6 @@ export default {
   },
   methods: {
     async loginUser() {
-      alert('Wow you logged in. Nice!')
       await axios.post(`http://localhost:3030/api/login`, {
         email: this.email,
         password: this.password
